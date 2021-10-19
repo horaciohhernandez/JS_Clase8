@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/jquery/popper.min.js"></script>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel="stylesheet" href="font/Roboto-Bold.ttf">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <title>Index</title>
+</head>
+<body>
+    <a name="top"></a>
+    <header>
+        <div class="gridBanner">
+            <img id="banner" src="img/logo/logo vivir con el alma_PNG.png" alt=""> 
+         </div>
+         <nav class="gridMenu">
+             <div>
+               <ul class="menu">
+                    <li><a id="menuColor" class="textoPropiedades" href="pages/registro.html">Registrate</a></li>  
+                    <li><a id="menuColor" class="textoPropiedades" href="index.html">Inicio</a></li> 
+               </ul>
+             </div>
+         </nav>         
+         <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md fixed-top">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pricing-header px-2 py-2 pt-md-3 pb-md-3 my-3 mx-auto text-center">
+            <h1 class="display-6 mt-0">Lista de Productos</h1>
+            <p class="lead">Selecciona alguno de nuestros productos</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamientos Anticeluliticos</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/productos/celulitis.svg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">2800</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li class="font-weight-bold">4 SESIONES</li>
+                            <li>MASAJES MANUALES +</li>
+                            <li></li>
+                            <li>RADIOFRECUENCIA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamientos Reductores</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/productos/reductor.svg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4800</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li class="font-weight-bold">6 SESIONES</li>
+                            <li>MASAJES REDUCTORES</li>
+                            <li> MANUALES</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamientos Tonificadores</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/productos/tonificador.svg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3200</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li class="font-weight-bold">10 SESIONES</li>
+                            <li>CON</li>
+                            <li>ELECTRODOS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamientos Anticeluliticos</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/productos/celulitis1.svg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">5000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li class="font-weight-bold">8 SESIONES</li>
+                            <li>MASAJES MANUALES +</li>
+                            <li>RADIOFRECUENCIA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamientos Reductores</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/productos/reductor1.svg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li class="font-weight-bold">4 SESIONES</li>
+                            <li>MASAJES REDUCTORES MANUALES +</li>
+                            <li>ELECTRODOS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamientos Tonificadores</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/productos/tonificador1.svg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">6500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li class="font-weight-bold">8 SESIONES CON ELECTODOS +</li>
+                            <li>RADIOFRECUENCIA + </li>
+                            <li>MASAJES MANUALES</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="gotohome">
+        <a href="index.html"><img src="img/logo/gotohome.png" alt=""></a>    
+    </div>
+
+    <footer class="gridFooter">
+        <div class="redes">
+          <ul class="imagenes_redes">
+            <li><a href="http://whatsapp.guardatuti.html"><img src="img/redes/whatsappchico.png" alt=""></a></li>
+            <li><a href="http://twitter.guardatutio.html"><img src="img/redes/twichico.png" alt=""></a></li>
+            <li><a href="http://facebook.guardatuti.html"><img src="img/redes/facechico.png" alt=""></a></li>
+            <li><a href="http://instagram.guardatuti.html"><img src="img/redes/instachico.png" alt=""></a></li>
+            <li><a href="http://linkedin.guardatuti.html"><img src="img/redes/linkchico.png" alt=""></a></li>
+          </ul>
+        </div>    
+        <div id="textosFooter">
+          <br>                        
+            <p class="textosFooter">Vivir con el Alma S.A. ©2021 Todos los derechos reservados</p>
+            <p class="textosFooter">Domicilio............, San Juan, Argentina – Teléfono: +54 (261) 7 636 8800 </p>
+        </div>
+        <div class="disenador">            
+          <ul id="textosFooter_disenador">
+            <li><h6 class="textosFooter">Web Programador</h6><a href="http://3h.html"><img src="img/redes/logopro01.png" alt=""></a></li>
+            <li><h6 class="textosFooter">Web Diseñador</h6><a href="http://firedesign.html"><img src="img/redes/logodise02.png" alt=""></a></li>
+          </ul>            
+        </div>
+    </footer>
+    
+    <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/jquery/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+</body>
+</html>

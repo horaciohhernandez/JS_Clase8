@@ -1,0 +1,21 @@
+{
+  "name": "js_clase8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "casual": "^1.6.2",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13",
+    "npm": "^8.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
